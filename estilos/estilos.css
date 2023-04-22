@@ -46,6 +46,7 @@ a{
 }
 .hero{
     width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,21 +56,27 @@ a{
     object-fit: cover;
 }
 .hero__text-div{
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top:300px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     background-color: #000000bb;
-    padding: 3rem 0;
+    /* padding: 3rem 0; */
 }
 .hero__title{
-    font-size: 3rem;
+    text-align: center;
+    font-size: 5vw;
     color: #FFCF56;
     text-shadow: 0 2px 2px black;
+    line-height:4rem;
 }
 .hero__text{
-    font-size: 1.5rem;
+    font-size: 3vw;
     color:#FFFAFF;
     text-shadow: 0 2px 2px black;
+    padding:0 1rem;
+    text-align: center;
 }
