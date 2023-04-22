@@ -83,3 +83,15 @@ a{
     text-align: center;
     line-height: 9vw;
 }
+.uru{
+    background: rgb(245,183,0);
+    background: linear-gradient(180deg, rgba(245,183,0,1) 0%, rgba(245,183,0,1) 50%, rgba(243,243,244,1) 50%, rgba(243,243,244,1) 62%, rgba(53,167,255,1) 62%, rgba(53,167,255,1) 74%, rgba(243,243,244,1) 74%, rgba(243,243,244,1) 87%, rgba(53,167,255,1) 87%, rgba(53,167,255,1) 100%); 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.guay{
+    background: rgb(243,243,244);
+    background: linear-gradient(180deg, rgba(243,243,244,1) 0%, rgba(243,243,244,1) 12%, rgba(53,167,255,1) 12%, rgba(53,167,255,1) 25%, rgba(243,243,244,1) 25%, rgba(243,243,244,1) 38%, rgba(53,167,255,1) 38%, rgba(53,167,255,1) 50%, rgba(243,243,244,1) 50%, rgba(243,243,244,1) 62%, rgba(53,167,255,1) 62%, rgba(53,167,255,1) 74%, rgba(243,243,244,1) 74%, rgba(243,243,244,1) 87%, rgba(53,167,255,1) 87%, rgba(53,167,255,1) 100%); 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}   
