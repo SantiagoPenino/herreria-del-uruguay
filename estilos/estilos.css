@@ -14,18 +14,19 @@ a{
 }
 .navbar{
     width: 100%;
+    height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: .5rem;
-    background-color: #5BC0EB;
-    box-shadow: 0 2px 2px #03120E;
+    background-color: #0B1436;
     position: sticky;
+    box-shadow: 0 2px 2px black ;
 }
 .nav__title{
     display: flex;
     align-items: center;
-    color: #03120E;
-    font-size: 1.5rem;
+    color: #FFFAFF;
+    font-size: 1.3rem;
 }
 .nav__btn{
     display: flex;
@@ -33,6 +34,7 @@ a{
 }
 .btn{
     font-size: 1rem;
+    font-weight: bold;
     padding: .5rem 1rem;
     background-color: #FFCF56;
     border-radius: 50px;
@@ -41,4 +43,31 @@ a{
 }
 .btn__contactar{
     display: none;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero__img{
+    height: 100%;
+    object-fit: cover;
+}
+.hero__text-div{
+    position: absolute;
+    top:500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hero__title{
+    font-size: 3rem;
+    color: #FFCF56;
+    text-shadow: 0 2px 2px black;
+}
+.hero__text{
+    font-size: 1.5rem;
+    color:#FFFAFF;
+    text-shadow: 0 2px 2px black;
 }
