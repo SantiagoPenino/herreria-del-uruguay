@@ -56,10 +56,12 @@ a{
 }
 .hero__text-div{
     position: absolute;
-    top:500px;
+    top:300px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #000000bb;
+    padding: 3rem 0;
 }
 .hero__title{
     font-size: 3rem;
