@@ -15,7 +15,7 @@ ul,ol{
 }
 .btn__whatsapp{
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 10px;
     z-index: 999;
     animation-name: wp360;
@@ -99,14 +99,14 @@ ul,ol{
     line-height: 9vw;
 }
 .uru{
-    background: rgb(245,183,0);
-    background: linear-gradient(180deg, rgba(245,183,0,1) 0%, rgba(245,183,0,1) 50%, rgba(243,243,244,1) 50%, rgba(243,243,244,1) 62%, rgba(53,167,255,1) 62%, rgba(53,167,255,1) 74%, rgba(243,243,244,1) 74%, rgba(243,243,244,1) 87%, rgba(53,167,255,1) 87%, rgba(53,167,255,1) 100%); 
+    background: #F5B700;
+    background: linear-gradient(180deg,#F5B700 0%,#F5B700 50%,#F3F3F4 50%,#F3F3F4 62%,#35A7FF 62%,#35A7FF 74%, #F3F3F4 74%,#F3F3F4 87%,#35A7FF 87%,#35A7FF 100%); 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 .guay{
-    background: rgb(243,243,244);
-    background: linear-gradient(180deg, rgba(243,243,244,1) 0%, rgba(243,243,244,1) 12%, rgba(53,167,255,1) 12%, rgba(53,167,255,1) 25%, rgba(243,243,244,1) 25%, rgba(243,243,244,1) 38%, rgba(53,167,255,1) 38%, rgba(53,167,255,1) 50%, rgba(243,243,244,1) 50%, rgba(243,243,244,1) 62%, rgba(53,167,255,1) 62%, rgba(53,167,255,1) 74%, rgba(243,243,244,1) 74%, rgba(243,243,244,1) 87%, rgba(53,167,255,1) 87%, rgba(53,167,255,1) 100%); 
+    background: #F3F3F4;
+    background: linear-gradient(180deg,#F3F3F4 0%,#F3F3F4 12%,#35A7FF 12%, #35A7FF 25%,#F3F3F4 25%,#F3F3F4 38%,#35A7FF 38%,#35A7FF 50%,#F3F3F4 50%, rgba(243,243,244,1) 62%,#35A7FF 62%,#35A7FF 74%,#F3F3F4 74%,#F3F3F4 87%, #35A7FF 87%, #35A7FF 100%); 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }  
@@ -125,7 +125,7 @@ ul,ol{
 .contacto__form-div{
     display: flex;
     justify-content: center;
-    padding: 0 2em ;
+    padding: 0 .5em ;
     width: 100%;
 }
 .contacto__form{
@@ -158,6 +158,7 @@ ul,ol{
     text-shadow: 0 1px 1px black;
     text-transform: uppercase;
     border-radius: 50px;
+    cursor: pointer;
 }
 textarea{
     resize: none;
@@ -186,51 +187,42 @@ textarea:focus, input:focus{
     align-items: center;
 }
 .social{
-    width: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+    align-items: center;
     padding: 1rem;
 }
 .social__title{
-    font-size: 6vw;
+    font-size: 2rem;
     color: #FFFAFF;
-    text-align: center;
-    display: flex;
-    justify-content: center;
 }
-.social ul{
+.social{
     display: flex;
     justify-content:space-around;
-    align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
-.social__icons{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-.fa{
-    font-size: 1.8rem;
-}
-.social__icons a{
+.social a{
+
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     box-shadow: 0 2px 2px black;
-    border-radius: 50px;
+    border-radius: 50%;
 }
-.social__icons:nth-child(2) a{
+.facebook{
     background-color: #1877F2;
     color: #FFFAFF;
+    font-size: 1.8rem;
+    text-decoration: none;
 }
-.social__icons:nth-child(3) a{
-    background-color: #E4405F;
+.instagram {
+    text-decoration: none;
+    background:linear-gradient(-130deg,#5B51D8,#833AB4,#E1306C,#FFDC80); 
     color: #FFFAFF;
+    font-size: 1.8rem;
 }
 .signed{
     width: 100%;
