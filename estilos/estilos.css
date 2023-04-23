@@ -269,8 +269,8 @@ textarea:focus, input:focus{
 .slider{
     padding: 2em;
     width: 100%;
-    height: auto;
-    margin: auto;
+    height: 100%;
+    /* margin: auto; */
     overflow: hidden;
 }
 .slider__title{
