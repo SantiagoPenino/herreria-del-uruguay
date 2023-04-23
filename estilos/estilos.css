@@ -269,27 +269,27 @@ textarea:focus, input:focus{
 .slider{
     padding: 2em 0;
     width: 90vw;
-    height: 250px;
+    height: auto;
     margin: auto;
     overflow: hidden;
 }
-.slider__title{
+/* .slider__title{
     font-size: 5vw;
     text-transform: uppercase;
     text-decoration: underline;
     text-align: center;
     padding-bottom: .5em;
-}
+} */
 .slider__track{
     display: flex;
-    animation: scroll 20s linear infinite;
-    -webkit-animation: scroll 20s linear infinite;
+    animation: scroll 60s linear infinite;
+    -webkit-animation: scroll 60s linear infinite;
     width: calc(150px * 18);
 }
 .slider__slide{
     padding: 0 1em;
     width: 150px;
-    display: flex;
+    /* display: flex; */
 }
 .slider__slide img{
     width: 100%;
