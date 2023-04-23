@@ -8,21 +8,25 @@
 ul,ol{
     list-style-type: none;
 }
-a{
-    text-decoration: none;
-    color: #F3F3F4;
+.CTA__llamar{
+    text-decoration: none; 
     text-shadow: 0 1px 1px black;
+    color: #F3F3F4;
 }
 .btn__whatsapp{
     position: fixed;
     bottom: 10px;
     right: 10px;
-    z-index: 99999;
+    z-index: 999;
     animation-name: wp360;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
+}
+.btn__whatsapp img{
+    width: 50px;
+    height: 50px;
 }
 .navbar{
     width: 100%;
@@ -110,11 +114,14 @@ a{
     padding: 5rem;
 }
 .contacto__title{
-    font-size: 3rem;
+    font-size: 9vw;
     text-align: center;
     text-decoration: underline;
     font-weight: 700;
 } 
+.contacto__div{
+    padding: 3em;
+}
 .contacto__form-div{
     display: flex;
     justify-content: center;
@@ -168,4 +175,114 @@ textarea:focus, input:focus{
     0%{
         transform: scale(1.1)
     }
+}
+.footer{
+    background-color: #040F0F;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+.social__title{
+    font-size: 6vw;
+    color: #FFFAFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.social ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+}
+.social__icons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.fa{
+    font-size: 30px;
+    transition: .3s;
+    line-height: 40px;
+}
+.social__icons a{
+    color: #040F0F; 
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFAFF;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 0 2px 2px black;
+    border-radius: 50px;
+}
+.social__icons a:hover{
+    transform: scale(0.8);
+}
+.social__icons:nth-child(1) a{
+    background-color: #1877F2;
+    color: #FFFAFF;
+}
+.social__icons:nth-child(3) a{
+    background-color: #E4405F;
+    color: #FFFAFF;
+}
+.signed{
+    width: 100%;
+    text-align: center;
+    color: #FFFAFF;
+    background-color: #040F0F;
+    font-weight: 100;
+    padding:.1rem;
+}
+.signed a {
+    text-decoration: none;
+    color: #F3F3F4;
+}
+.fa-heart{
+    font-size: 1rem;
+    line-height: unset;
+    color:red;
+    text-shadow: 0 1px 1px black;
+}
+.horario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+.horario__title{
+    color: #FFFAFF;
+    font-size: 5vw;
+}
+.horario p{
+    color: #FFFAFF;
+    font-size: 3vw;
+}
+.info{
+    padding-bottom: 1rem;
+    text-align: center;
+    display: flex;    
+}
+.info a{
+    text-decoration: none;
+    color: #FFFAFF;
+    font-size: 4vw;
+    margin: auto;
+}
+.fa-envelope{
+    font-size: 4vw;
+    margin: auto;
 }
