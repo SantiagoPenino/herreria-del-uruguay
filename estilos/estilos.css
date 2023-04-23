@@ -283,7 +283,7 @@ textarea:focus, input:focus{
 .slider .slider__track{
     display: flex;
     animation: scroll 20s linear infinite;
-    -webkit-animation: scroll 50s linear infinite;
+    /* -webkit-animation: scroll 50s linear infinite; */
     width: calc(100px * 18);
 }
 .slider .slider__slide{
@@ -296,10 +296,10 @@ textarea:focus, input:focus{
 @keyframes scroll {
     0%{
         transform: translateX(0);
-        -webkit-transform: translateX(0);
+        /* -webkit-transform: translateX(0); */
     }
     100%{
         transform: translateX(calc(-100px * 9));
-        -webkit-transform: translateX(calc(-100px * 9));
+        /* -webkit-transform: translateX(calc(-100px * 9)); */
     }
 }
