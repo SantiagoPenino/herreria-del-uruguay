@@ -15,7 +15,7 @@ ul,ol{
 }
 .btn__whatsapp{
     position: fixed;
-    bottom: 10px;
+    bottom: 50px;
     right: 10px;
     z-index: 999;
     animation-name: wp360;
@@ -213,17 +213,14 @@ textarea:focus, input:focus{
     align-items: center;
 }
 .fa{
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 1.8rem;
 }
 .social__icons a{
-    position: relative;
-    color: #040F0F; 
-    display: block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #FFFAFF;
-    text-align: center;
     box-shadow: 0 2px 2px black;
     border-radius: 50px;
 }
@@ -247,12 +244,6 @@ textarea:focus, input:focus{
 .signed a {
     text-decoration: none;
     color: #F3F3F4;
-}
-.fa-heart{
-    font-size: 2.5vw;
-    line-height: unset;
-    color:red;
-    text-shadow: 0 1px 1px black;
 }
 .horario{
     display: flex;
@@ -280,6 +271,6 @@ textarea:focus, input:focus{
     margin: auto;
 }
 .fa-envelope{
-    font-size: 4vw;
+    font-size: 3vw;
     margin: auto;
 }
