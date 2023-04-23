@@ -120,7 +120,7 @@ ul,ol{
     font-weight: 700;
 } 
 .contacto__div{
-    padding: 3em;
+    padding: .5em;
 }
 .contacto__form-div{
     display: flex;
@@ -265,4 +265,41 @@ textarea:focus, input:focus{
 .fa-envelope{
     font-size: 3vw;
     margin: auto;
+}
+.slider{
+    padding: 2em;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider__title{
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: .5em;
+}
+.slider .slider__track{
+    display: flex;
+    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 50s linear infinite;
+    width: calc(100px * 18);
+}
+.slider .slider__slide{
+    padding: 0 1em;
+    width: 100px;
+}
+.slider .slider__slide img{
+    width: 100%;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100px * 9));
+        -webkit-transform: translateX(calc(-100px * 9));
+    }
 }
