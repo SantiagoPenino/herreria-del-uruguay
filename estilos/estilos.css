@@ -279,7 +279,7 @@ textarea:focus, input:focus{
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    width: calc(200*18);
+    width: calc(200px*18);
 }
 
 .slider__slide{
