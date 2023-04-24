@@ -120,7 +120,7 @@ ul,ol{
     font-weight: 700;
 } 
 .contacto__div{
-    padding: .5em;
+    padding-bottom: 3em;
 }
 .contacto__form-div{
     display: flex;
@@ -268,22 +268,30 @@ textarea:focus, input:focus{
 }
 /* SLIDE */
 .slider{
-    width: 75vw;
+    padding: 2em 0;
+    width: 100vw;
     height: auto;
     margin: auto;
 }
-
+.slider__title{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 5vw;
+    padding: .5em 0;
+}
 .slider__track{
-    display: inline-flex;
+    display: flex;
     animation-name: scroll;
-    animation-duration: 30s;
+    animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    width: calc(200px*18);
+    width: calc(150px*18);
 }
 
 .slider__slide{
-    width: 200px;
+    width: 150px;
+    padding: 0 1em;    
 }
 
 .slider__img{
@@ -295,6 +303,6 @@ textarea:focus, input:focus{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-200px*9));
+        transform: translateX(calc(-150px*9));
     }
 }
