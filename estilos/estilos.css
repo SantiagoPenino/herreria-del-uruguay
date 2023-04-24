@@ -34,8 +34,9 @@ ul,ol{
     justify-content: space-around;
     padding: .5rem;
     background-color: #040F0F;
-    position: sticky;
+    position: fixed;
     box-shadow: 0 2px 2px black ;
+    z-index: 999;
 }
 .nav__title{
     display: flex;
@@ -74,7 +75,7 @@ ul,ol{
 }
 .hero__text-div{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -102,13 +103,13 @@ ul,ol{
     background: #F5B700;
     background: linear-gradient(180deg,#F5B700 0%,#F5B700 50%,#F3F3F4 50%,#F3F3F4 62%,#35A7FF 62%,#35A7FF 74%, #F3F3F4 74%,#F3F3F4 87%,#35A7FF 87%,#35A7FF 100%); 
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 .guay{
     background: #F3F3F4;
     background: linear-gradient(180deg,#F3F3F4 0%,#F3F3F4 12%,#35A7FF 12%, #35A7FF 25%,#F3F3F4 25%,#F3F3F4 38%,#35A7FF 38%,#35A7FF 50%,#F3F3F4 50%, rgba(243,243,244,1) 62%,#35A7FF 62%,#35A7FF 74%,#F3F3F4 74%,#F3F3F4 87%, #35A7FF 87%, #35A7FF 100%); 
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }  
 .article{
     padding: 5rem;
@@ -266,12 +267,13 @@ textarea:focus, input:focus{
     font-size: 3vw;
     margin: auto;
 }
-/* SLIDE */
+
 .slider{
     padding: 2em 0;
-    width: 100vw;
+    width: 98vw;
     height: auto;
     margin: auto;
+    overflow: hidden;
 }
 .slider__title{
     text-align: center;
@@ -283,7 +285,7 @@ textarea:focus, input:focus{
 .slider__track{
     display: flex;
     animation-name: scroll;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     width: calc(150px*18);
