@@ -35,14 +35,16 @@ ul,ol{
     padding: .5rem;
     background-color: #040F0F;
     position: fixed;
+    top: 0;
     box-shadow: 0 2px 2px black ;
-    z-index: 999;
+    z-index: 500;
 }
 .nav__title{
     display: flex;
     align-items: center;
     color: #FFFAFF;
     font-size: 5vw;
+    z-index: 600;
 }
 .nav__btn{
     display: flex;
