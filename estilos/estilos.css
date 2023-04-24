@@ -71,7 +71,7 @@ ul,ol{
     justify-content: center;
 }
 .hero__img{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
 }
@@ -106,12 +106,14 @@ ul,ol{
     background: linear-gradient(180deg,#F5B700 0%,#F5B700 50%,#F3F3F4 50%,#F3F3F4 62%,#35A7FF 62%,#35A7FF 74%, #F3F3F4 74%,#F3F3F4 87%,#35A7FF 87%,#35A7FF 100%); 
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
     z-index: 600;
 }
 .guay{
     background: #F3F3F4;
     background: linear-gradient(180deg,#F3F3F4 0%,#F3F3F4 12%,#35A7FF 12%, #35A7FF 25%,#F3F3F4 25%,#F3F3F4 38%,#35A7FF 38%,#35A7FF 50%,#F3F3F4 50%, rgba(243,243,244,1) 62%,#35A7FF 62%,#35A7FF 74%,#F3F3F4 74%,#F3F3F4 87%, #35A7FF 87%, #35A7FF 100%); 
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
     z-index: 600;
 }  
