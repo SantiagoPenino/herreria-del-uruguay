@@ -4,11 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'poppins',sans-serif;
+    scroll-behavior: smooth;
 }
 ul,ol{
     list-style-type: none;
 }
 .CTA__llamar{
+    text-decoration: none; 
+    text-shadow: 0 1px 1px black;
+    color: #F3F3F4;
+}
+.CTA__contactar{
     text-decoration: none; 
     text-shadow: 0 1px 1px black;
     color: #F3F3F4;
@@ -31,7 +37,7 @@ ul,ol{
     text-decoration: none;
 }
 
-.navbar{
+.nav{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -39,7 +45,7 @@ ul,ol{
     background-color: #040F0F;
     position: fixed;
     top: 0;
-    box-shadow: 0 2px 2px black ;
+    box-shadow: 0 2px 5px black ;
     z-index: 500;
 }
 .nav__title{
@@ -52,7 +58,6 @@ ul,ol{
 .nav__btn{
     display: flex;
     align-items: center;
-    padding: 1vw 0;
 }
 .btn{
     font-size: 4vw;
@@ -124,24 +129,26 @@ ul,ol{
     padding: 5rem;
 }
 .contacto__title{
-    font-size: 9vw;
+    font-size: 7vw;
     text-align: center;
     text-decoration: underline;
     font-weight: 700;
 } 
-.contacto__div{
+.contacto{
     padding-bottom: 3em;
 }
 .contacto__form-div{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0 .5em ;
     width: 100%;
 }
 .contacto__form{
     display:flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    width: 60%;
 }
 .contacto__form input{
     padding: .5em ;
@@ -149,7 +156,6 @@ ul,ol{
     font-size: 1rem;
     border: 0;
     border-bottom: 1px solid #bbbbbb;
-    
 }
 .contacto__form textarea{
     padding: .25em;
@@ -161,7 +167,7 @@ ul,ol{
     background-color: #dc143c;
     border: 0;
     color: #FFFAFF;
-    width: 50%;
+    width: 150px;
     align-self: center;
     font-size: 1rem;
     font-weight: 700;
@@ -221,14 +227,14 @@ textarea:focus, input:focus{
 .facebook{
     background-color: #1877F2;
     color: #FFFAFF;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 .instagram {
     text-decoration: none;
     background:linear-gradient(-130deg,#5B51D8,#833AB4,#E1306C,#FFDC80); 
     color: #FFFAFF;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .signed{
     width: 100%;
@@ -311,5 +317,84 @@ textarea:focus, input:focus{
     }
     100%{
         transform: translateX(calc(-150px*9));
+    }
+}
+
+@media (min-width:600px) and (max-width:1024px){
+    .hero__title{
+        font-size: 7vw;
+    }
+    .hero__text{
+        font-size: 6vw;
+    }
+    .btn{
+        font-size: 3vw;
+    }
+    .signed{
+        font-size: 2vw;
+    }
+    .slider__title{
+        font-size: 4vw;
+    }
+    .contacto__title{
+        font-size: 5vw;
+    }
+}
+
+@media (min-width:1024px){
+    .nav__title{
+        font-size: 2vw;
+    }
+    .hero__title{
+        font-size: 5vw;
+        text-align: start;
+        padding: 4vw 8vw;
+        line-height: 1vw;
+    }
+    .hero__text{
+        font-size: 3vw;
+        text-align: start;
+        line-height: 5vw;
+        padding: 0 5vw;
+    }
+    .btn__llamar{
+        display: none;
+    }
+    .btn__contactar{
+        display: flex;
+    }
+    .btn{
+        font-size: 1vw;
+    }
+    .signed{
+        font-size: 1vw;
+    }
+    .slider__title{
+        font-size: 2vw;
+    }
+    .contacto__title{
+        font-size: 2.5vw;
+    }
+    .contacto__form{
+        width: 40%;
+    }
+    .horario__title{
+        font-size: 1.5vw;
+    }
+    .horario p{
+        font-size: 1vw;
+    }
+    .info a{
+        font-size: 1vw;
+    }
+    .fa-envelope{
+        font-size: 1vw;
+    }
+    .social__title{
+        font-size: 1.5rem;
+    }
+    .btn__whatsapp{
+        bottom: 75px;
+        right: 50px;
     }
 }
