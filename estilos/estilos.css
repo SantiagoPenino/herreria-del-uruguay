@@ -397,4 +397,20 @@ textarea:focus, input:focus{
         bottom: 75px;
         right: 50px;
     }
+    .slider__track{
+        width: calc(200px*18);
+    }
+    
+    .slider__slide{
+        width: 200px;
+        padding: 0 1em;    
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-200px*9));
+        }
+    }
 }
